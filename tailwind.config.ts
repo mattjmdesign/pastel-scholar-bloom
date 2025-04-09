@@ -63,16 +63,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom pastel colors
+				// Updated pastel colors to match the image
 				pastel: {
-					peach: '#FDE1D3',
-					mint: '#E5EFDC',
-					lavender: '#E5DEFF',
-					pink: '#FFDEE2',
-					yellow: '#FEF7CD',
-					blue: '#D3E4FD',
-					base: '#FEF6F0',
-					gold: '#D0B984',
+					peach: '#F9D8D4',
+					mint: '#D5E8D4',
+					lavender: '#CCD1EE',
+					pink: '#FBE4EA',
+					yellow: '#FFF0AA',
+					blue: '#C1E4F7',
+					base: '#FBE9F1',  // Soft pink background
+					gold: '#E8B87B',  // Warmer gold
 				}
 			},
 			borderRadius: {
