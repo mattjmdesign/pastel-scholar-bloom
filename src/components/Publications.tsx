@@ -31,12 +31,12 @@ const Publications = () => {
   ];
 
   return (
-    <section id="publications" className="section-padding relative bg-pastel-mint/20">
+    <section id="publications" className="section-padding relative bg-pastel-peach/10">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-12 text-center">
           <BookOpen className="mx-auto mb-4 text-pastel-gold" size={32} />
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">Publications</h2>
-          <div className="h-1 w-20 bg-pastel-mint mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-pastel-peach mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-muted-foreground">
             My published research focuses on theoretical physics with applications to cosmology and particle physics.
           </p>

@@ -28,12 +28,12 @@ const Presentations = () => {
   ];
 
   return (
-    <section id="presentations" className="section-padding relative bg-pastel-blue/20">
+    <section id="presentations" className="section-padding relative bg-pastel-mint/10">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-12 text-center">
           <PresentationIcon className="mx-auto mb-4 text-pastel-gold" size={32} />
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">Presentations</h2>
-          <div className="h-1 w-20 bg-pastel-blue mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-pastel-mint mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-muted-foreground">
             I regularly present my research at international conferences and academic seminars.
           </p>

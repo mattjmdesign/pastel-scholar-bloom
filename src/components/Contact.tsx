@@ -1,25 +1,52 @@
 
 import React from 'react';
-import { Mail } from 'lucide-react';
+import { Mail, Twitter } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="section-padding relative bg-pastel-blue/20">
+    <section id="contact" className="section-padding relative bg-pastel-pink/10">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-12 text-center">
           <Mail className="mx-auto mb-4 text-pastel-gold" size={32} />
           <h2 className="text-3xl md:text-4xl font-display font-semibold mb-4">Get in Touch</h2>
-          <div className="h-1 w-20 bg-pastel-mint mx-auto mb-6"></div>
+          <div className="h-1 w-20 bg-pastel-pink mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-muted-foreground">
             Feel free to reach out for research collaborations, speaking engagements, or academic inquiries.
           </p>
         </div>
         
-        <div className="bg-white rounded-lg shadow-md p-8 max-w-4xl mx-auto mb-16">
-          <h3 className="text-2xl font-display font-medium mb-6">Send a Message</h3>
+        <div className="grid md:grid-cols-2 gap-10 items-stretch">
+          <div className="bg-white rounded-lg shadow-md p-8 flex flex-col">
+            <h3 className="text-2xl font-display font-medium mb-6">Contact Information</h3>
+            
+            <div className="space-y-6 flex-grow">
+              <div className="flex items-start">
+                <div className="bg-pastel-mint/20 p-2 rounded-full mr-4 mt-1">
+                  <Mail className="text-pastel-gold" size={20} />
+                </div>
+                <div>
+                  <h4 className="text-lg font-medium mb-1">Email</h4>
+                  <a href="mailto:olivia.parker@berkeley.edu" className="text-pastel-gold hover:underline">
+                    olivia.parker@berkeley.edu
+                  </a>
+                </div>
+              </div>
+              
+              <div className="pt-4 mt-auto">
+                <h4 className="text-lg font-medium mb-3">Connect With Me</h4>
+                <div className="flex space-x-4">
+                  <a href="#twitter" className="bg-pastel-gold/10 p-3 rounded-full hover:bg-pastel-gold/20 transition-colors">
+                    <Twitter className="text-pastel-gold" size={20} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           
-          <form className="space-y-4">
-            <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-white rounded-lg shadow-md p-8">
+            <h3 className="text-2xl font-display font-medium mb-6">Send a Message</h3>
+            
+            <form className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-1">
                   Your Name
@@ -43,39 +70,39 @@ const Contact = () => {
                   placeholder="Email"
                 />
               </div>
-            </div>
-            
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium mb-1">
-                Subject
-              </label>
-              <input
-                type="text"
-                id="subject"
-                className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pastel-gold/50"
-                placeholder="Subject"
-              />
-            </div>
-            
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-1">
-                Message
-              </label>
-              <textarea
-                id="message"
-                rows={4}
-                className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pastel-gold/50"
-                placeholder="Your message"
-              ></textarea>
-            </div>
-            
-            <button
-              type="submit"
-              className="w-full bg-pastel-gold text-white px-6 py-3 rounded-lg font-medium hover:bg-pastel-gold/90 transition-colors"
-            >
-              Send Message
-            </button>
-          </form>
+              
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium mb-1">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pastel-gold/50"
+                  placeholder="Subject"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium mb-1">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pastel-gold/50"
+                  placeholder="Your message"
+                ></textarea>
+              </div>
+              
+              <button
+                type="submit"
+                className="w-full bg-pastel-gold text-white px-6 py-3 rounded-lg font-medium hover:bg-pastel-gold/90 transition-colors"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>

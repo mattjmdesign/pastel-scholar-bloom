@@ -4,7 +4,7 @@ import { FileText, Download, GraduationCap, Briefcase, Award } from 'lucide-reac
 
 const CV = () => {
   return (
-    <section id="cv" className="section-padding relative bg-pastel-lavender/20">
+    <section id="cv" className="section-padding relative bg-pastel-lavender/10">
       <div className="container mx-auto px-6 md:px-12">
         <div className="mb-12 text-center">
           <FileText className="mx-auto mb-4 text-pastel-gold" size={32} />
@@ -26,7 +26,7 @@ const CV = () => {
           {/* Education Section */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <div className="flex items-center mb-6">
-              <div className="bg-pastel-mint/30 p-3 rounded-full mr-4">
+              <div className="bg-pastel-mint/20 p-3 rounded-full mr-4">
                 <GraduationCap className="text-pastel-gold" size={24} />
               </div>
               <h3 className="text-2xl font-display font-medium">Education</h3>
@@ -73,7 +73,7 @@ const CV = () => {
             {/* Research Experience */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center mb-6">
-                <div className="bg-pastel-blue/30 p-3 rounded-full mr-4">
+                <div className="bg-pastel-peach/20 p-3 rounded-full mr-4">
                   <Briefcase className="text-pastel-gold" size={24} />
                 </div>
                 <h3 className="text-2xl font-display font-medium">Research Experience</h3>
@@ -103,7 +103,7 @@ const CV = () => {
             {/* Awards */}
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="flex items-center mb-6">
-                <div className="bg-pastel-yellow/30 p-3 rounded-full mr-4">
+                <div className="bg-pastel-yellow/20 p-3 rounded-full mr-4">
                   <Award className="text-pastel-gold" size={24} />
                 </div>
                 <h3 className="text-2xl font-display font-medium">Awards & Honors</h3>
