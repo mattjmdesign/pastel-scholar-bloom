@@ -71,31 +71,31 @@ const Navbar = () => {
           <div className="flex flex-col space-y-4">
             <button 
               onClick={() => scrollToSection('home')}
-              className="py-2 px-4 text-left hover:bg-pastel-peach/20 rounded transition-colors"
+              className="py-2 px-4 text-left hover:bg-pastel-mint/20 rounded transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('publications')}
-              className="py-2 px-4 text-left hover:bg-pastel-peach/20 rounded transition-colors"
+              className="py-2 px-4 text-left hover:bg-pastel-mint/20 rounded transition-colors"
             >
               Publications
             </button>
             <button 
               onClick={() => scrollToSection('presentations')}
-              className="py-2 px-4 text-left hover:bg-pastel-peach/20 rounded transition-colors"
+              className="py-2 px-4 text-left hover:bg-pastel-mint/20 rounded transition-colors"
             >
               Presentations
             </button>
             <button 
               onClick={() => scrollToSection('cv')}
-              className="py-2 px-4 text-left hover:bg-pastel-peach/20 rounded transition-colors"
+              className="py-2 px-4 text-left hover:bg-pastel-mint/20 rounded transition-colors"
             >
               CV
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
-              className="py-2 px-4 text-left hover:bg-pastel-peach/20 rounded transition-colors"
+              className="py-2 px-4 text-left hover:bg-pastel-mint/20 rounded transition-colors"
             >
               Contact
             </button>

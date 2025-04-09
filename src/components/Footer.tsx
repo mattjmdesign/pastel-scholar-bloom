@@ -13,7 +13,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="font-display text-2xl font-semibold text-pastel-gold mb-4">Contact Me</h3>
             <div className="flex items-center justify-center md:justify-start mb-3">
-              <div className="bg-pastel-mint/20 p-2 rounded-full mr-3">
+              <div className="bg-pastel-mint/30 p-2 rounded-full mr-3">
                 <Mail className="text-pastel-gold" size={18} />
               </div>
               <a href="mailto:olivia.parker@berkeley.edu" className="text-pastel-gold hover:underline">
@@ -39,7 +39,7 @@ const Footer = () => {
           <div className="text-center md:text-right">
             <h3 className="font-display text-2xl font-semibold text-pastel-gold mb-4">Connect With Me</h3>
             <div className="flex items-center justify-center md:justify-end mb-3">
-              <div className="bg-pastel-peach/20 p-2 rounded-full mr-3">
+              <div className="bg-pastel-blue/30 p-2 rounded-full mr-3">
                 <Twitter className="text-pastel-gold" size={18} />
               </div>
               <a href="#twitter" className="text-pastel-gold hover:underline">
