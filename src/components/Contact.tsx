@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Twitter } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -15,11 +15,11 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="bg-white rounded-lg shadow-md p-8">
+        <div className="grid md:grid-cols-2 gap-10 items-stretch">
+          <div className="bg-white rounded-lg shadow-md p-8 flex flex-col">
             <h3 className="text-2xl font-display font-medium mb-6">Contact Information</h3>
             
-            <div className="space-y-6">
+            <div className="space-y-6 flex-grow">
               <div className="flex items-start">
                 <div className="bg-pastel-mint/20 p-2 rounded-full mr-4 mt-1">
                   <Mail className="text-pastel-gold" size={20} />
@@ -32,41 +32,9 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="flex items-start">
-                <div className="bg-pastel-peach/20 p-2 rounded-full mr-4 mt-1">
-                  <Phone className="text-pastel-gold" size={20} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium mb-1">Phone</h4>
-                  <a href="tel:+15105557890" className="text-pastel-gold hover:underline">
-                    (510) 555-7890
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="bg-pastel-lavender/20 p-2 rounded-full mr-4 mt-1">
-                  <MapPin className="text-pastel-gold" size={20} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium mb-1">Office</h4>
-                  <p className="text-muted-foreground">
-                    Physics Department, Room 366<br />
-                    University of California, Berkeley<br />
-                    Berkeley, CA 94720
-                  </p>
-                </div>
-              </div>
-              
-              <div className="pt-4">
+              <div className="pt-4 mt-auto">
                 <h4 className="text-lg font-medium mb-3">Connect With Me</h4>
                 <div className="flex space-x-4">
-                  <a href="#github" className="bg-pastel-gold/10 p-3 rounded-full hover:bg-pastel-gold/20 transition-colors">
-                    <Github className="text-pastel-gold" size={20} />
-                  </a>
-                  <a href="#linkedin" className="bg-pastel-gold/10 p-3 rounded-full hover:bg-pastel-gold/20 transition-colors">
-                    <Linkedin className="text-pastel-gold" size={20} />
-                  </a>
                   <a href="#twitter" className="bg-pastel-gold/10 p-3 rounded-full hover:bg-pastel-gold/20 transition-colors">
                     <Twitter className="text-pastel-gold" size={20} />
                   </a>
