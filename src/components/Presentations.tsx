@@ -3,6 +3,25 @@ import React from 'react';
 import { PresentationIcon, Calendar, MapPin } from 'lucide-react';
 
 const Presentations = () => {
+  const featuredPresentations = [
+    {
+      title: "Quantum Gravity: Bridging General Relativity and Quantum Mechanics",
+      event: "International Conference on Quantum Physics",
+      date: "October 12, 2024",
+      location: "Vienna, Austria",
+      description: "Exploring theoretical frameworks that might reconcile quantum mechanics with general relativity, focusing on loop quantum gravity and string theory approaches.",
+      image: "https://images.unsplash.com/photo-1518770660439-4636190af475"
+    },
+    {
+      title: "The Future of Particle Physics After the Higgs Boson",
+      event: "CERN Symposium on Particle Physics",
+      date: "August 4, 2024",
+      location: "Geneva, Switzerland",
+      description: "Discussing potential discovery pathways beyond the Standard Model, with emphasis on supersymmetry and extra dimensions.",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6"
+    }
+  ];
+
   const presentations = [
     {
       title: "Dark Matter Interactions: New Theoretical Approaches",
@@ -39,6 +58,38 @@ const Presentations = () => {
           </p>
         </div>
         
+        {/* Featured presentations with images */}
+        <div className="grid gap-8 md:grid-cols-2 mb-12">
+          {featuredPresentations.map((presentation, index) => (
+            <div 
+              key={`featured-${index}`}
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full"
+            >
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={presentation.image} 
+                  alt={presentation.title}
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                />
+              </div>
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-display font-medium mb-3">{presentation.title}</h3>
+                <div className="flex items-center text-sm text-muted-foreground mb-2">
+                  <Calendar size={14} className="mr-2" />
+                  {presentation.date}
+                </div>
+                <div className="flex items-center text-sm text-muted-foreground mb-4">
+                  <MapPin size={14} className="mr-2" />
+                  {presentation.location}
+                </div>
+                <p className="text-sm font-medium mb-2">{presentation.event}</p>
+                <p className="text-muted-foreground text-sm mt-auto">{presentation.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* Regular presentations */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {presentations.map((presentation, index) => (
             <div 

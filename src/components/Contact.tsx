@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Twitter } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
@@ -15,60 +15,35 @@ const Contact = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-10 items-stretch">
-          <div className="bg-white rounded-lg shadow-md p-8 flex flex-col">
-            <h3 className="text-2xl font-display font-medium mb-6">Contact Information</h3>
-            
-            <div className="space-y-6 flex-grow">
-              <div className="flex items-start">
-                <div className="bg-pastel-mint/20 p-2 rounded-full mr-4 mt-1">
-                  <Mail className="text-pastel-gold" size={20} />
-                </div>
-                <div>
-                  <h4 className="text-lg font-medium mb-1">Email</h4>
-                  <a href="mailto:olivia.parker@berkeley.edu" className="text-pastel-gold hover:underline">
-                    olivia.parker@berkeley.edu
-                  </a>
-                </div>
-              </div>
-              
-              <div className="pt-4 mt-auto">
-                <h4 className="text-lg font-medium mb-3">Connect With Me</h4>
-                <div className="flex space-x-4">
-                  <a href="#twitter" className="bg-pastel-gold/10 p-3 rounded-full hover:bg-pastel-gold/20 transition-colors">
-                    <Twitter className="text-pastel-gold" size={20} />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+        <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-lg shadow-md p-8">
             <h3 className="text-2xl font-display font-medium mb-6">Send a Message</h3>
             
             <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">
-                  Your Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pastel-gold/50"
-                  placeholder="Name"
-                />
-              </div>
-              
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pastel-gold/50"
-                  placeholder="Email"
-                />
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium mb-1">
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pastel-gold/50"
+                    placeholder="Name"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-1">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    className="w-full px-4 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-pastel-gold/50"
+                    placeholder="Email"
+                  />
+                </div>
               </div>
               
               <div>
